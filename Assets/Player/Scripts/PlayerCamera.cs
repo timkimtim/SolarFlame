@@ -61,9 +61,9 @@ public class PlayerCamera : MonoBehaviour
         rb = GetComponent<Rigidbody>();
 
         // lock the mouse cursor in the middle of the screen
-        Cursor.lockState = CursorLockMode.Locked;
+        // TODO Cursor.lockState = CursorLockMode.Locked;
         // make the mouse coursor invisible
-        Cursor.visible = false;
+        // TODO: Cursor.visible = false;
     }
 
     private void Update()
@@ -144,7 +144,6 @@ public class PlayerCamera : MonoBehaviour
 
     #endregion
 
-    /// as a beginner, just ignore this code for now
     #region HeadBob
 
     private void CheckMotion()
