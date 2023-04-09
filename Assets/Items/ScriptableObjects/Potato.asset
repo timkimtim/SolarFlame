@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 857c7135d5e202a43a2660ed1ef59149, type: 3}
   m_Name: Potato
   m_EditorClassIdentifier: 
-  DisplayName: Potato
-  Description: Sweet potato
-  Type: Consumable
-  Icon: {fileID: 21300000, guid: 4b43cb4d51f8ac84fb578d068083095f, type: 3}
-  MaxStackSize: 3
+  displayName: Potato
+  description: Sweet potato
+  type: consumable
+  icon: {fileID: 21300000, guid: 4b43cb4d51f8ac84fb578d068083095f, type: 3}
+  maxStackSize: 5

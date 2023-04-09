@@ -1,62 +1,65 @@
-using System.Collections;
 using System.Collections.Generic;
 using Inventory.Scripts;
-using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.EventSystems;
-using UnityEngine.UI;
 using TMPro;
-using UnityEngine.Serialization;
+using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
-public class MouseItemData : MonoBehaviour
+namespace Items.Scripts
 {
-    public Image ItemSprite;
-    public TextMeshProUGUI ItemCount;
-    public InventorySlot AssignedInventorySlot;
-
-    private void Awake()
+    public class MouseItemData : MonoBehaviour
     {
-        ItemSprite.color = Color.clear;
-        ItemCount.text = "";
-    }
+        public Image itemSprite;
+        public TextMeshProUGUI itemCount;
+        public InventorySlot AssignedInventorySlot;
 
-    public void UpdateSlot(InventorySlot inventorySlot)
-    {
-        AssignedInventorySlot.AssignItem(inventorySlot);
-
-        ItemSprite.sprite = inventorySlot.ItemData.Icon;
-        ItemSprite.color = Color.white;
-
-        if (inventorySlot.StackSize > 1) ItemCount.text = inventorySlot.StackSize.ToString();
-        else ItemCount.text = "";
-    }
-    private void Update()
-    {
-        if (AssignedInventorySlot.ItemData != null)
+        private void Awake()
         {
-            transform.position = Mouse.current.position.ReadValue();
+            itemSprite.color = Color.clear;
+            itemCount.text = "";
+        }
 
-            if (Mouse.current.leftButton.wasPressedThisFrame && !IsPointerOverUIObject())
+        public void UpdateSlot(InventorySlot inventorySlot)
+        {
+            AssignedInventorySlot.AssignItem(inventorySlot);
+
+            itemSprite.sprite = inventorySlot.ItemData.icon;
+            itemSprite.color = Color.white;
+
+            if (inventorySlot.StackSize > 1) itemCount.text = inventorySlot.StackSize.ToString();
+            else itemCount.text = "";
+        }
+        private void Update()
+        {
+            // TODO: add controller support
+            if (AssignedInventorySlot.ItemData != null) // if has an item follow the mouse position
             {
-                ClearSlot();
+                transform.position = Mouse.current.position.ReadValue();
+
+                if (Mouse.current.leftButton.wasPressedThisFrame && !IsPointerOverUIObject())
+                {
+                    ClearSlot();
+                    // TODO: Drop an item to the ground
+                }
             }
         }
-    }
 
-    public void ClearSlot ()
-    {
-        AssignedInventorySlot.ClearSlot();
-        ItemCount.text = "";
-        ItemSprite.color = Color.clear;
-        ItemSprite.sprite = null;
-    }
+        public void ClearSlot ()
+        {
+            AssignedInventorySlot.ClearSlot();
+            itemCount.text = "";
+            itemSprite.color = Color.clear;
+            itemSprite.sprite = null;
+        }
 
-    public static bool IsPointerOverUIObject()
-    {
-        PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
-        eventDataCurrentPosition.position = Mouse.current.position.ReadValue();
-        List<RaycastResult> results = new List<RaycastResult>();
-        EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
-        return results.Count > 0;
+        private static bool IsPointerOverUIObject()
+        {
+            PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
+            eventDataCurrentPosition.position = Mouse.current.position.ReadValue();
+            List<RaycastResult> results = new List<RaycastResult>();
+            EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
+            return results.Count > 0;
+        }
     }
 }

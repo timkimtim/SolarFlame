@@ -1,32 +1,33 @@
-using System.Collections;
-using System.Collections.Generic;
-using Items.Scripts;
+using Inventory.Scripts;
 using UnityEngine;
 
-[RequireComponent(typeof(SphereCollider))]
-public class ItemPickUp : MonoBehaviour
+namespace Items.Scripts
 {
-    public float PickUpRadius = 1f;
-    public InventoryItemData ItemData;
-
-    private SphereCollider itemCollider;
-
-    private void Awake()
+    [RequireComponent(typeof(SphereCollider))]
+    public class ItemPickUp : MonoBehaviour
     {
-        itemCollider = GetComponent<SphereCollider>();
-        itemCollider.isTrigger = true;
-        itemCollider.radius = PickUpRadius;
-    }
+        public float pickUpRadius = 1f;
+        public InventoryItemData itemData;
 
-    private void OnTriggerEnter(Collider other)
-    {
-        var inventory = other.transform.GetComponent<InventoryHolder>();
+        private SphereCollider itemCollider;
 
-        if (!inventory) return;
-
-        if (inventory.InventorySystem.AddToInventory(ItemData, 1))
+        private void Awake()
         {
-            Destroy(this.gameObject);
+            itemCollider = GetComponent<SphereCollider>();
+            itemCollider.isTrigger = true;
+            itemCollider.radius = pickUpRadius;
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            var inventory = other.transform.GetComponent<InventoryHolder>();
+
+            if (!inventory) return;
+
+            if (inventory.InventorySystem.AddToInventory(itemData, 1))
+            {
+                Destroy(this.gameObject);
+            }
         }
     }
 }

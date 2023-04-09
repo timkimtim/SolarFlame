@@ -252,8 +252,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3e2c42e2ff20bb4784db9bcada38d41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PickUpRadius: 1
-  ItemData: {fileID: 11400000, guid: dc23c4e5965f21a46a92aab14986f99a, type: 2}
+  pickUpRadius: 1
+  itemData: {fileID: 11400000, guid: dc23c4e5965f21a46a92aab14986f99a, type: 2}
 --- !u!135 &22559050
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -803,8 +803,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3e2c42e2ff20bb4784db9bcada38d41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PickUpRadius: 1
-  ItemData: {fileID: 11400000, guid: 02d24cf46d1eda943805c329c7125703, type: 2}
+  pickUpRadius: 1
+  itemData: {fileID: 11400000, guid: 02d24cf46d1eda943805c329c7125703, type: 2}
 --- !u!135 &94470994
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1170,8 +1170,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3e2c42e2ff20bb4784db9bcada38d41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PickUpRadius: 1
-  ItemData: {fileID: 11400000, guid: dc23c4e5965f21a46a92aab14986f99a, type: 2}
+  pickUpRadius: 1
+  itemData: {fileID: 11400000, guid: dc23c4e5965f21a46a92aab14986f99a, type: 2}
 --- !u!135 &319056517
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1231,8 +1231,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3e2c42e2ff20bb4784db9bcada38d41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PickUpRadius: 1
-  ItemData: {fileID: 11400000, guid: 02d24cf46d1eda943805c329c7125703, type: 2}
+  pickUpRadius: 1
+  itemData: {fileID: 11400000, guid: 02d24cf46d1eda943805c329c7125703, type: 2}
 --- !u!135 &380647133
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1292,8 +1292,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3e2c42e2ff20bb4784db9bcada38d41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PickUpRadius: 1
-  ItemData: {fileID: 11400000, guid: dc23c4e5965f21a46a92aab14986f99a, type: 2}
+  pickUpRadius: 1
+  itemData: {fileID: 11400000, guid: dc23c4e5965f21a46a92aab14986f99a, type: 2}
 --- !u!135 &383374981
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1689,8 +1689,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3e2c42e2ff20bb4784db9bcada38d41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PickUpRadius: 1
-  ItemData: {fileID: 11400000, guid: dc23c4e5965f21a46a92aab14986f99a, type: 2}
+  pickUpRadius: 1
+  itemData: {fileID: 11400000, guid: dc23c4e5965f21a46a92aab14986f99a, type: 2}
 --- !u!135 &565447066
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1750,8 +1750,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3e2c42e2ff20bb4784db9bcada38d41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PickUpRadius: 1
-  ItemData: {fileID: 11400000, guid: dc23c4e5965f21a46a92aab14986f99a, type: 2}
+  pickUpRadius: 1
+  itemData: {fileID: 11400000, guid: dc23c4e5965f21a46a92aab14986f99a, type: 2}
 --- !u!135 &584210926
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2101,8 +2101,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3e2c42e2ff20bb4784db9bcada38d41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PickUpRadius: 1
-  ItemData: {fileID: 11400000, guid: dc23c4e5965f21a46a92aab14986f99a, type: 2}
+  pickUpRadius: 1
+  itemData: {fileID: 11400000, guid: dc23c4e5965f21a46a92aab14986f99a, type: 2}
 --- !u!135 &708433307
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3312,8 +3312,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3e2c42e2ff20bb4784db9bcada38d41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PickUpRadius: 1
-  ItemData: {fileID: 11400000, guid: 02d24cf46d1eda943805c329c7125703, type: 2}
+  pickUpRadius: 1
+  itemData: {fileID: 11400000, guid: 02d24cf46d1eda943805c329c7125703, type: 2}
 --- !u!135 &912901561
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3860,8 +3860,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3e2c42e2ff20bb4784db9bcada38d41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PickUpRadius: 1
-  ItemData: {fileID: 11400000, guid: dc23c4e5965f21a46a92aab14986f99a, type: 2}
+  pickUpRadius: 1
+  itemData: {fileID: 11400000, guid: dc23c4e5965f21a46a92aab14986f99a, type: 2}
 --- !u!135 &1057213850
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4792,8 +4792,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3e2c42e2ff20bb4784db9bcada38d41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PickUpRadius: 1
-  ItemData: {fileID: 11400000, guid: 02d24cf46d1eda943805c329c7125703, type: 2}
+  pickUpRadius: 1
+  itemData: {fileID: 11400000, guid: 02d24cf46d1eda943805c329c7125703, type: 2}
 --- !u!135 &1245462151
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5432,8 +5432,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3e2c42e2ff20bb4784db9bcada38d41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PickUpRadius: 1
-  ItemData: {fileID: 11400000, guid: dc23c4e5965f21a46a92aab14986f99a, type: 2}
+  pickUpRadius: 1
+  itemData: {fileID: 11400000, guid: dc23c4e5965f21a46a92aab14986f99a, type: 2}
 --- !u!135 &1579554536
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5652,8 +5652,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3e2c42e2ff20bb4784db9bcada38d41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PickUpRadius: 1
-  ItemData: {fileID: 11400000, guid: dc23c4e5965f21a46a92aab14986f99a, type: 2}
+  pickUpRadius: 1
+  itemData: {fileID: 11400000, guid: dc23c4e5965f21a46a92aab14986f99a, type: 2}
 --- !u!135 &1660415775
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5978,7 +5978,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c1bb91808c6a2c4cb86bd1b75ee0f6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventorySize: 10
+  inventorySize: 8
   inventorySystem:
     inventorySlots: []
 --- !u!136 &1702628054
@@ -6317,8 +6317,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3e2c42e2ff20bb4784db9bcada38d41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PickUpRadius: 1
-  ItemData: {fileID: 11400000, guid: 02d24cf46d1eda943805c329c7125703, type: 2}
+  pickUpRadius: 1
+  itemData: {fileID: 11400000, guid: 02d24cf46d1eda943805c329c7125703, type: 2}
 --- !u!135 &1840731771
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6383,8 +6383,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5aa5732246c0ed548864750aea21646f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemSprite: {fileID: 1194468874}
-  ItemCount: {fileID: 963054105}
+  itemSprite: {fileID: 1194468874}
+  itemCount: {fileID: 963054105}
   AssignedInventorySlot:
     itemData: {fileID: 0}
     stackSize: -1
@@ -6434,8 +6434,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3e2c42e2ff20bb4784db9bcada38d41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PickUpRadius: 1
-  ItemData: {fileID: 11400000, guid: 02d24cf46d1eda943805c329c7125703, type: 2}
+  pickUpRadius: 1
+  itemData: {fileID: 11400000, guid: 02d24cf46d1eda943805c329c7125703, type: 2}
 --- !u!135 &1866109005
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6816,8 +6816,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3e2c42e2ff20bb4784db9bcada38d41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PickUpRadius: 1
-  ItemData: {fileID: 11400000, guid: dc23c4e5965f21a46a92aab14986f99a, type: 2}
+  pickUpRadius: 1
+  itemData: {fileID: 11400000, guid: dc23c4e5965f21a46a92aab14986f99a, type: 2}
 --- !u!135 &1962419468
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6877,8 +6877,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3e2c42e2ff20bb4784db9bcada38d41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PickUpRadius: 1
-  ItemData: {fileID: 11400000, guid: dc23c4e5965f21a46a92aab14986f99a, type: 2}
+  pickUpRadius: 1
+  itemData: {fileID: 11400000, guid: dc23c4e5965f21a46a92aab14986f99a, type: 2}
 --- !u!135 &1965451539
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7019,8 +7019,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3e2c42e2ff20bb4784db9bcada38d41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PickUpRadius: 1
-  ItemData: {fileID: 11400000, guid: dc23c4e5965f21a46a92aab14986f99a, type: 2}
+  pickUpRadius: 1
+  itemData: {fileID: 11400000, guid: dc23c4e5965f21a46a92aab14986f99a, type: 2}
 --- !u!135 &1973502644
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7130,8 +7130,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3e2c42e2ff20bb4784db9bcada38d41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PickUpRadius: 1
-  ItemData: {fileID: 11400000, guid: 02d24cf46d1eda943805c329c7125703, type: 2}
+  pickUpRadius: 1
+  itemData: {fileID: 11400000, guid: 02d24cf46d1eda943805c329c7125703, type: 2}
 --- !u!135 &1991347345
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7333,8 +7333,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3e2c42e2ff20bb4784db9bcada38d41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PickUpRadius: 1
-  ItemData: {fileID: 11400000, guid: 02d24cf46d1eda943805c329c7125703, type: 2}
+  pickUpRadius: 1
+  itemData: {fileID: 11400000, guid: 02d24cf46d1eda943805c329c7125703, type: 2}
 --- !u!135 &2108146152
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7361,7 +7361,7 @@ GameObject:
   - component: {fileID: 2118537393}
   - component: {fileID: 2118537392}
   - component: {fileID: 2118537391}
-  - component: {fileID: 2118537390}
+  - component: {fileID: 2118537395}
   m_Layer: 5
   m_Name: Hotbar
   m_TagString: Untagged
@@ -7397,29 +7397,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 108}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2118537390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2118537388}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fd24241b70b28942b4ad42ab2b78e5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseInventoryItem: {fileID: 1859811017}
-  inventoryHolder: {fileID: 1702628053}
-  slots:
-  - {fileID: 3227057826512688495}
-  - {fileID: 751885669}
-  - {fileID: 884495229}
-  - {fileID: 1688102701}
-  - {fileID: 1457558667}
-  - {fileID: 653771001}
-  - {fileID: 1631991327}
-  - {fileID: 564297181}
 --- !u!114 &2118537391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7498,6 +7475,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2118537388}
   m_CullTransparentMesh: 1
+--- !u!114 &2118537395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118537388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fd24241b70b28942b4ad42ab2b78e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseInventoryItem: {fileID: 1859811017}
+  inventoryHolder: {fileID: 1702628053}
+  slots:
+  - {fileID: 3227057826512688495}
+  - {fileID: 751885669}
+  - {fileID: 884495229}
+  - {fileID: 1688102701}
+  - {fileID: 1457558667}
+  - {fileID: 653771001}
+  - {fileID: 1631991327}
+  - {fileID: 564297181}
 --- !u!1 &2144420139
 GameObject:
   m_ObjectHideFlags: 0
