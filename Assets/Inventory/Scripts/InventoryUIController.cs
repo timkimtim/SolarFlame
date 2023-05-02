@@ -8,23 +8,30 @@ namespace Inventory.Scripts
     {
         public DynamicInventoryDisplay chestPanel;
         public DynamicInventoryDisplay playerInventoryPanel;
+        public DynamicInventoryDisplay playeEquipSlotsPanel;
+        public DynamicInventoryDisplay playeBuilderSlotsPanel;
+        public GameObject playerInventoryHolder;
 
         private void OnEnable()
         {
             InventoryHolder.OnDynamicInventoryDisplayRequested += DisplayInventory;
             PlayerInventoryHolder.OnPlayerInventoryDisplayRequested += DisplayPlayerInventory;
+            PlayerInventoryHolder.OnPlayerEquipSlotsDisplayRequested += DisplayEquipSlots;
+            PlayerInventoryHolder.OnPlayerBuilderSlotsDisplayRequested += DisplayBuilderSlots;
         }
 
         private void OnDisable()
         {
             InventoryHolder.OnDynamicInventoryDisplayRequested -= DisplayInventory;
             PlayerInventoryHolder.OnPlayerInventoryDisplayRequested -= DisplayPlayerInventory;
+            PlayerInventoryHolder.OnPlayerEquipSlotsDisplayRequested -= DisplayEquipSlots;
+            PlayerInventoryHolder.OnPlayerBuilderSlotsDisplayRequested -= DisplayBuilderSlots;
         }
 
         private void Awake()
         {
             chestPanel.gameObject.SetActive(false);
-            playerInventoryPanel.gameObject.SetActive(false);
+            playerInventoryHolder.gameObject.SetActive(false);
         }
 
         private void Update()
@@ -33,9 +40,9 @@ namespace Inventory.Scripts
             {
                 chestPanel.gameObject.SetActive(false);
             }
-            if (playerInventoryPanel.gameObject.activeInHierarchy && Keyboard.current.escapeKey.wasPressedThisFrame)
+            if (playerInventoryHolder.gameObject.activeInHierarchy && Keyboard.current.escapeKey.wasPressedThisFrame)
             {
-                playerInventoryPanel.gameObject.SetActive(false);
+                playerInventoryHolder.gameObject.SetActive(false);
             }
         }
 
@@ -47,8 +54,16 @@ namespace Inventory.Scripts
 
         private void DisplayPlayerInventory(InventorySystem inventoryToDisplay)
         {
-            playerInventoryPanel.gameObject.SetActive(true);
+            playerInventoryHolder.gameObject.SetActive(true);
             playerInventoryPanel.RefreshDynamicInventory(inventoryToDisplay);
+        }
+        private void DisplayEquipSlots(InventorySystem inventoryToDisplay)
+        {
+            playeEquipSlotsPanel.RefreshDynamicInventory(inventoryToDisplay);
+        }
+        private void DisplayBuilderSlots(InventorySystem inventoryToDisplay)
+        {
+            playeBuilderSlotsPanel.RefreshDynamicInventory(inventoryToDisplay);
         }
     }
 }
